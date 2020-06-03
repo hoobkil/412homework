@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Map<String, String>> prepareContentFromPrefs(){
         String[] arrayContent = prefs.getString(SAVED_TEXT, null).split("\n\n");
-        for (int i = 0; i < 18; i++) {
+        for (int i = 0; i < arrayContent.length; i++) {
             Map<String, String> map = new HashMap<>();
             map.put(KEY1, arrayContent[i]);
             map.put(KEY2, arrayContent[i].length()+"");
